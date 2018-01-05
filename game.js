@@ -412,6 +412,7 @@ Ship = function () {
 
   this.shoot = function() {
     for (var i = 0; i < this.bullets.length; i++) {
+      this.delayBeforeBullet = 10;
       if (!this.bullets[i].visible) {
         SFX.laser();
         var bullet = this.bullets[i];
